@@ -2,7 +2,7 @@
   "name": "ligjs",
   "version": "1.0.0",
   "description": "",
-  "main": "example.js",
+  "main": "index.js",
   "dependencies": {
     "puppeteer": "^1.12.1",
     "puppeteer-core": "^1.12.1"
