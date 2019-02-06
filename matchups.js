@@ -21,7 +21,7 @@ VALID_ROLES = [
 // ]
 
 const cleanInputs = (...inputs) => {
-  inputs.map((inp) => {
+  return inputs.map((inp) => {
     if (!(typeof inp == String)) return false
     return inp.trim().toLowerCase()
   })
@@ -44,7 +44,6 @@ async function matchups(champion, role) {
     const matchupNodes = $('.counter-matchups')
     const champNameNodes = matchupNodes.find('a:first-child')
     const champNames = Array.prototype.map.call(champNameNodes, (a) => a.textContent.trim())
-
     const winRateNodes = matchupNodes.find('.winrating-area')
     const winRates = Array.prototype.map.call(winRateNodes, (n) => n.textContent.trim())
 
